@@ -61,7 +61,7 @@ const JobListItem = ({
       </div>
       <div className="hidden sm:flex flex-col shrink-0 items-end justify-between">
         <Badge>{type}</Badge>
-        <p className="flex items-center  gap-1.5 text-muted-foreground">
+        <p className="flex items-center  gap-1.5 text-muted-foreground bg-muted">
           <Clock size={16} className="shrink-0" />
           {relativeDate(createdAt)}
         </p>
