@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-const Heading = (props: React.HTMLProps<HTMLHeadingElement>) => {
+const H1 = (props: React.HTMLProps<HTMLHeadingElement>) => {
   return (
     <h1
       {...props}
@@ -15,4 +15,4 @@ const Heading = (props: React.HTMLProps<HTMLHeadingElement>) => {
   );
 };
 
-export default Heading;
+export default H1;

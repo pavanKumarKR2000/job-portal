@@ -1,0 +1,6 @@
+1) server side rendering
+2) server components
+3) server actions
+4) dynamic metadata generation
+5) adding key prop to form
+6) form validation using react hook form
