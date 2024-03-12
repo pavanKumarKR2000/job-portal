@@ -4,3 +4,4 @@
 4) dynamic metadata generation
 5) adding key prop to form
 6) form validation using react hook form
+7) static site generation

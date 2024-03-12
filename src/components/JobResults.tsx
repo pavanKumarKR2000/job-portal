@@ -3,6 +3,7 @@ import JobListItem from "./JobListItem";
 import prisma from "@/lib/prisma";
 import { jobFilterValues } from "@/lib/validation";
 import { Prisma } from "@prisma/client";
+import Link from "next/link";
 
 interface JobResultsProps {
   filterValues: jobFilterValues;
@@ -13,7 +14,7 @@ const JobResults = async ({
 }: JobResultsProps) => {
   const searchString = q
     ?.split(" ")
-    .filter((word) => word.length > 0)
+    .filter((word: string) => word.length > 0)
     .join(" & ");
 
   const searchFilter: Prisma.JobWhereInput = searchString
@@ -45,7 +46,9 @@ const JobResults = async ({
   return (
     <div className="space-y-4 grow">
       {jobs.map((job) => (
-        <JobListItem job={job} key={job.id} />
+        <Link href={`/jobs/${job.slug}`} key={job.id} className="block">
+          <JobListItem job={job} />
+        </Link>
       ))}
       {jobs.length === 0 && (
         <p className="mx-auto text-center md:flex items-center justify-center md:h-[50vh]">
