@@ -5,3 +5,4 @@
 5) adding key prop to form
 6) form validation using react hook form
 7) static site generation
+8) revalidate path

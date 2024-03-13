@@ -5,7 +5,7 @@ const NotFoundPage = () => {
   return (
     <main className="mx-auto max-w-5xl my-10 px-3 text-center space-y-5">
       <H1>Not Found</H1>
-      <p>Sorry,the page you are loocking for does not exist</p>
+      <p>Sorry,the page you are looking for does not exist</p>
     </main>
   );
 };
