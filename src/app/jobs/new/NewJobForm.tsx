@@ -206,14 +206,14 @@ export default function NewJobForm() {
             />
             <div className="space-y-2">
               <Label htmlFor="applicationEmail">How to apply</Label>
-              <div className="flex justify-between">
+              <div className="flex flex-col gap-4 md:flex-row md:justify-between">
                 <FormField
                   control={control}
                   name="applicationEmail"
                   render={({ field }) => (
                     <FormItem className="grow">
                       <FormControl>
-                        <div className="flex items-center">
+                        <div className="flex flex-col gap-3 md:flex-row items-center">
                           <Input
                             id="applicationEmail"
                             placeholder="Email"

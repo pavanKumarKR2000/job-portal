@@ -1,12 +1,12 @@
 import React from "react";
 import JobListItem from "./JobListItem";
 import prisma from "@/lib/prisma";
-import { jobFilterValues } from "@/lib/validation";
+import { JobFilterValues } from "@/lib/validation";
 import { Prisma } from "@prisma/client";
 import Link from "next/link";
 
 interface JobResultsProps {
-  filterValues: jobFilterValues;
+  filterValues: JobFilterValues;
 }
 
 const JobResults = async ({
